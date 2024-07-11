@@ -1,0 +1,2 @@
+/usr/local/pytorch/1.5-cuda10/pytorch-1.5-cuda10-venv/bin/python3: can't open file 'data224.py': [Errno 2] No such file or directory
+srun: error: gp07: task 0: Exited with exit code 2

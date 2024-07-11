@@ -1,0 +1,8 @@
+usage: parallel_all.py [-h] [--model_name MODEL_NAME]
+                       [--folder_dir FOLDER_DIR] [--save_dir SAVE_DIR]
+                       [--save_dir_data SAVE_DIR_DATA]
+                       [--learning_rate LEARNING_RATE]
+                       [--num_epochs NUM_EPOCHS] [--batch_size BATCH_SIZE]
+                       [--new]
+parallel_all.py: error: unrecognized arguments: par_K80
+srun: error: ge01: task 0: Exited with exit code 2

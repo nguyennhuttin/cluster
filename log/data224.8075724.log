@@ -1,0 +1,8 @@
+data224
+Models outputs /mnt/lustre/projects/vs25/Tin
+0.001
+100
+16
+False
+skip_training False
+outputs/real_alphabets_F256_pow2.csv

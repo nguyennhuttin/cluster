@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "parallel.py", line 69, in <module>
+    assert torch.cuda.is_available()
+AssertionError
+srun: error: hi00: task 0: Exited with exit code 1

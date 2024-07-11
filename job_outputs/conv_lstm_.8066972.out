@@ -1,0 +1,27 @@
+/outputs/real_alphabets_F256_pow2.csv
+Estimated number of samples: 12800
+Estimated input data size: 5.12 MB
+Estimated label size: 5.12 MB
+Estimated Total Dataset size: 10.24 MB
+Input data shape: (678150, 316) (316,)
+Label data shape: (678150, 316) (316,)
+Input data shape: torch.Size([16, 1, 316])
+Labels shape: torch.Size([16, 316])
+Let's use 3 GPUs!
+checking model data, label, output shape
+torch.Size([16, 1, 316])
+torch.Size([16, 316])
+torch.Size([16, 3, 316])
+576427
+36027
+/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1269: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters().
+/pytorch/aten/src/ATen/native/cudnn/RNN.cpp:1269: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greatly increasing memory usage. To compact weights again call flatten_parameters().
+Traceback (most recent call last):
+  File "parallel.py", line 725, in <module>
+    model.load_state_dict(check_point['model_state_dict'])
+  File "/usr/local/pytorch/1.5-cuda10/pytorch-1.5-cuda10-venv/lib/python3.7/site-packages/torch/nn/modules/module.py", line 847, in load_state_dict
+    self.__class__.__name__, "\n\t".join(error_msgs)))
+RuntimeError: Error(s) in loading state_dict for DataParallel:
+	Missing key(s) in state_dict: "module.layers11.0.conv1.weight", "module.layers11.0.conv1.bias", "module.layers21.0.conv1.weight", "module.layers21.0.conv1.bias", "module.layers22.0.conv1.weight", "module.layers22.0.conv1.bias", "module.conv1.weight", "module.conv1.bias", "module.bilstm.weight_ih_l0", "module.bilstm.weight_hh_l0", "module.bilstm.bias_ih_l0", "module.bilstm.bias_hh_l0", "module.bilstm.weight_ih_l0_reverse", "module.bilstm.weight_hh_l0_reverse", "module.bilstm.bias_ih_l0_reverse", "module.bilstm.bias_hh_l0_reverse", "module.bilstm.weight_ih_l1", "module.bilstm.weight_hh_l1", "module.bilstm.bias_ih_l1", "module.bilstm.bias_hh_l1", "module.bilstm.weight_ih_l1_reverse", "module.bilstm.weight_hh_l1_reverse", "module.bilstm.bias_ih_l1_reverse", "module.bilstm.bias_hh_l1_reverse", "module.fc1.weight", "module.fc1.bias", "module.fc2.weight", "module.fc2.bias". 
+	Unexpected key(s) in state_dict: "layers11.0.conv1.weight", "layers11.0.conv1.bias", "layers21.0.conv1.weight", "layers21.0.conv1.bias", "layers22.0.conv1.weight", "layers22.0.conv1.bias", "conv1.weight", "conv1.bias", "bilstm.weight_ih_l0", "bilstm.weight_hh_l0", "bilstm.bias_ih_l0", "bilstm.bias_hh_l0", "bilstm.weight_ih_l0_reverse", "bilstm.weight_hh_l0_reverse", "bilstm.bias_ih_l0_reverse", "bilstm.bias_hh_l0_reverse", "bilstm.weight_ih_l1", "bilstm.weight_hh_l1", "bilstm.bias_ih_l1", "bilstm.bias_hh_l1", "bilstm.weight_ih_l1_reverse", "bilstm.weight_hh_l1_reverse", "bilstm.bias_ih_l1_reverse", "bilstm.bias_hh_l1_reverse", "fc1.weight", "fc1.bias", "fc2.weight", "fc2.bias". 
+srun: error: ge01: task 0: Exited with exit code 1

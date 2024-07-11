@@ -1,0 +1,28 @@
+parallel
+Models outputs /mnt/lustre/projects/vs25/Tin
+0.001
+1
+16
+start_from_checkpoint: True
+skip_training False
+outputs/real_alphabets_F256_pow2.csv
+Estimated number of samples: 12800
+Estimated input data size: 5.12 MB
+Estimated label size: 5.12 MB
+Estimated Total Dataset size: 10.24 MB
+Input data shape: (678150, 316) (316,)
+Label data shape: (678150, 316) (316,)
+Input data shape: torch.Size([16, 1, 316])
+Labels shape: torch.Size([16, 316])
+Let's use 3 GPUs!
+checking model data, label, output shape
+torch.Size([16, 1, 316])
+torch.Size([16, 316])
+torch.Size([16, 3, 316])
+576427
+36027
+/mnt/lustre/projects/vs25/Tin/Models/parallel.pt
+save path exists: False
+Checkpoint Does not exist for /mnt/lustre/projects/vs25/Tin/Models/parallel.pt
+device cuda:0
+start training

@@ -1,0 +1,20 @@
+data224
+Models outputs /mnt/lustre/projects/vs25/Tin
+0.001
+100
+16
+False
+skip_training False
+outputs/real_alphabets_F256_pow2.csv
+Estimated number of samples: 12800
+Estimated input data size: 5.12 MB
+Estimated label size: 5.12 MB
+Estimated Total Dataset size: 10.24 MB
+s l rs rl
+/mnt/lustre/projects/vs25/Tin/data/data224_signal.pt /mnt/lustre/projects/vs25/Tin/data/data224_labels.pt /mnt/lustre/projects/vs25/Tin/data/data224real_signal.pt /mnt/lustre/projects/vs25/Tin/data/data224real_labels.pt
+Input data shape: torch.Size([685700, 316]) torch.Size([316])
+Label data shape: torch.Size([685700, 316]) torch.Size([316])
+41802
+41802
+torch.Size([41802, 316])
+torch.Size([41802, 316])

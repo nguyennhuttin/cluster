@@ -1,0 +1,25 @@
+Estimated number of samples: 12800
+Estimated input data size: 5.12 MB
+Estimated label size: 5.12 MB
+Estimated Total Dataset size: 10.24 MB
+Traceback (most recent call last):
+  File "detect_224.py", line 404, in <module>
+    data_file_name, samples_per_sequence, letter=224)
+  File "detect_224.py", line 336, in prepare_train
+    dataset_path)  # read the reference signals
+  File "detect_224.py", line 193, in read_data
+    data = pd.read_csv(datafile_path, header=None)
+  File "/usr/local/pytorch/1.5-cuda10/pytorch-1.5-cuda10-venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 676, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/pytorch/1.5-cuda10/pytorch-1.5-cuda10-venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 448, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/usr/local/pytorch/1.5-cuda10/pytorch-1.5-cuda10-venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 880, in __init__
+    self._make_engine(self.engine)
+  File "/usr/local/pytorch/1.5-cuda10/pytorch-1.5-cuda10-venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 1114, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/usr/local/pytorch/1.5-cuda10/pytorch-1.5-cuda10-venv/lib/python3.7/site-packages/pandas/io/parsers.py", line 1891, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 374, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] File /outputs/real_alphabets_F256_pow2.csv does not exist: '/outputs/real_alphabets_F256_pow2.csv'
+srun: error: gp07: task 0: Exited with exit code 1

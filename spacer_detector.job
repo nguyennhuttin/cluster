@@ -1,0 +1,32 @@
+#!/bin/bash
+#SBATCH --begin=now
+#--spread-job 
+
+###### IMPORTANT ###################
+#SBATCH --output=logfile/spd.%j.out
+#SBATCH --job-name=spd       ### name your job
+#SBATCH --gres=gpu:P100:1
+
+#SBATCH --time=15:00:00            
+#SBATCH --ntasks=1                
+#SBATCH --cpus-per-task=1           ### every tasks has 2 threads
+#SBATCH --mem-per-cpu=10000
+#comment SBATCH --partition=short
+
+# To receive an email when job completes or fails
+#SBATCH --mail-user=tinplay41@gmail.com
+#,cmar0027@student.monash.edu
+#SBATCH --mail-type=ALL
+
+
+module load pytorch
+source .venv/bin/activate
+pip install wandb
+###### IMPORTANT ###################
+# --csv_file <file.csv>    this file should be from the outputs folder 
+# --model_name <name>      this is the model name  
+# -- new                   this will create new model by default will start from checkpoint
+# -- wandb_key <API_key>   Just in case 
+# -- wand_entity           Just in case you are in multiple team            
+
+srun python3 python full_spacer_detection.py --num_gpus 1 --skip_training  --csv_file full_spacer_detection_10k.csv --model_name full_spacer_detection_10k

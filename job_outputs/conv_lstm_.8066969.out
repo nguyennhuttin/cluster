@@ -1,0 +1,3 @@
+slurmstepd: error: *** JOB 8066969 ON gp00 CANCELLED AT 2022-01-15T13:36:54 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 22 seconds for job step to finish.
+slurmstepd: error: *** STEP 8066969.0 ON gp00 CANCELLED AT 2022-01-15T13:36:54 DUE TO TIME LIMIT ***

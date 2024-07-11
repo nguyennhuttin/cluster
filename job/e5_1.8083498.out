@@ -1,0 +1,2 @@
+/usr/local/pytorch/1.5-cuda10/pytorch-1.5-cuda10-venv/bin/python3: can't open file 'parallel.py': [Errno 2] No such file or directory
+srun: error: gp00: task 0: Exited with exit code 2

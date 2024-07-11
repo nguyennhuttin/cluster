@@ -1,0 +1,13 @@
+data224
+Models outputs D:/SRP_DNAencoding/Tin
+0.001
+100
+16
+False
+skip_training False
+outputs/real_alphabets_F256_pow2.csv
+Traceback (most recent call last):
+  File "detect_224.py", line 143, in <module>
+    upload = open(os.path.join(folder_dir, data_file_name), "r")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:/SRP_DNAencoding/Tin/outputs/real_alphabets_F256_pow2.csv'
+srun: error: gp07: task 0: Exited with exit code 1

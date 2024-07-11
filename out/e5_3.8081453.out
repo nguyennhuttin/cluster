@@ -1,0 +1,95 @@
+Requirement already satisfied: pip in ./.venv/lib/python3.7/site-packages (21.3.1)
+Requirement already satisfied: torch in ./.venv/lib/python3.7/site-packages (1.10.1)
+Requirement already satisfied: typing-extensions in ./.venv/lib/python3.7/site-packages (from torch) (4.0.1)
+Requirement already satisfied: torchvision in ./.venv/lib/python3.7/site-packages (0.11.2)
+Requirement already satisfied: pillow!=8.3.0,>=5.3.0 in ./.venv/lib/python3.7/site-packages (from torchvision) (9.0.0)
+Requirement already satisfied: numpy in ./.venv/lib/python3.7/site-packages (from torchvision) (1.21.5)
+Requirement already satisfied: torch==1.10.1 in ./.venv/lib/python3.7/site-packages (from torchvision) (1.10.1)
+Requirement already satisfied: typing-extensions in ./.venv/lib/python3.7/site-packages (from torch==1.10.1->torchvision) (4.0.1)
+Requirement already satisfied: tqdm in ./.venv/lib/python3.7/site-packages (4.62.3)
+Requirement already satisfied: matplotlib in ./.venv/lib/python3.7/site-packages (3.5.1)
+Requirement already satisfied: packaging>=20.0 in ./.venv/lib/python3.7/site-packages (from matplotlib) (21.3)
+Requirement already satisfied: pillow>=6.2.0 in ./.venv/lib/python3.7/site-packages (from matplotlib) (9.0.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in ./.venv/lib/python3.7/site-packages (from matplotlib) (1.3.2)
+Requirement already satisfied: python-dateutil>=2.7 in ./.venv/lib/python3.7/site-packages (from matplotlib) (2.8.2)
+Requirement already satisfied: numpy>=1.17 in ./.venv/lib/python3.7/site-packages (from matplotlib) (1.21.5)
+Requirement already satisfied: cycler>=0.10 in ./.venv/lib/python3.7/site-packages (from matplotlib) (0.11.0)
+Requirement already satisfied: fonttools>=4.22.0 in ./.venv/lib/python3.7/site-packages (from matplotlib) (4.28.5)
+Requirement already satisfied: pyparsing>=2.2.1 in ./.venv/lib/python3.7/site-packages (from matplotlib) (3.0.6)
+Requirement already satisfied: six>=1.5 in ./.venv/lib/python3.7/site-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+Requirement already satisfied: sklearn in ./.venv/lib/python3.7/site-packages (0.0)
+Requirement already satisfied: scikit-learn in ./.venv/lib/python3.7/site-packages (from sklearn) (1.0.2)
+Requirement already satisfied: scipy>=1.1.0 in ./.venv/lib/python3.7/site-packages (from scikit-learn->sklearn) (1.7.3)
+Requirement already satisfied: numpy>=1.14.6 in ./.venv/lib/python3.7/site-packages (from scikit-learn->sklearn) (1.21.5)
+Requirement already satisfied: joblib>=0.11 in ./.venv/lib/python3.7/site-packages (from scikit-learn->sklearn) (1.1.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in ./.venv/lib/python3.7/site-packages (from scikit-learn->sklearn) (3.0.0)
+Collecting pandas
+  Downloading pandas-1.3.5-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.3 MB)
+Requirement already satisfied: numpy>=1.17.3 in ./.venv/lib/python3.7/site-packages (from pandas) (1.21.5)
+Collecting pytz>=2017.3
+  Downloading pytz-2021.3-py2.py3-none-any.whl (503 kB)
+Requirement already satisfied: python-dateutil>=2.7.3 in ./.venv/lib/python3.7/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in ./.venv/lib/python3.7/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Installing collected packages: pytz, pandas
+Successfully installed pandas-1.3.5 pytz-2021.3
+1.10.1+cu102
+parallel
+Models outputs /mnt/lustre/projects/vs25/Tin
+0.001
+1
+16
+True
+skip_training False
+outputs/real_alphabets_F256_pow2.csv
+Estimated number of samples: 12800
+Estimated input data size: 5.12 MB
+Estimated label size: 5.12 MB
+Estimated Total Dataset size: 10.24 MB
+Input data shape: (678150, 316) (316,)
+Label data shape: (678150, 316) (316,)
+Input data shape: torch.Size([16, 1, 316])
+Labels shape: torch.Size([16, 316])
+Let's use 3 GPUs!
+checking model data, label, output shape
+torch.Size([16, 1, 316])
+torch.Size([16, 316])
+torch.Size([16, 3, 316])
+576427
+36027
+/mnt/lustre/projects/vs25/Tin/Models/parallel.pt
+save path exists: False
+Checkpoint Does not exist for /mnt/lustre/projects/vs25/Tin/Models/parallel.pt
+device cuda:0
+start training
+  0%|          | 0/36027 [00:00<?, ?it/s]  0%|          | 0/36027 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "parallel.py", line 872, in <module>
+    model, device, data_loader_train, optimizer, loss_fn, training_loss_logger)
+  File "parallel.py", line 821, in train
+    loss.backward()
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/autograd/__init__.py", line 156, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/autograd/function.py", line 199, in apply
+    return user_fn(self, *args)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/nn/parallel/_functions.py", line 34, in backward
+    return (None,) + ReduceAddCoalesced.apply(ctx.input_device, ctx.num_inputs, *grad_outputs)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/nn/parallel/_functions.py", line 45, in forward
+    return comm.reduce_add_coalesced(grads_, destination)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/nn/parallel/comm.py", line 143, in reduce_add_coalesced
+    flat_result = reduce_add(flat_tensors, destination)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/nn/parallel/comm.py", line 96, in reduce_add
+    nccl.reduce(inputs, output=result, root=root_index)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/cuda/nccl.py", line 72, in reduce
+    _check_sequence_type(inputs)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/cuda/nccl.py", line 51, in _check_sequence_type
+    if not isinstance(inputs, collections.Container) or isinstance(inputs, torch.Tensor):
+  File "/usr/local/python/3.7.3-system/lib/python3.7/collections/__init__.py", line 52, in __getattr__
+    DeprecationWarning, stacklevel=2)
+DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+Exception ignored in: <_io.FileIO name='e5_3.8081453.log' mode='ab' closefd=True>
+ResourceWarning: unclosed file <_io.TextIOWrapper name='e5_3.8081453.log' mode='a' encoding='UTF-8'>
+Exception ignored in: <_io.FileIO name='/mnt/lustre/projects/vs25/Tin/outputs/real_alphabets_F256_pow2.csv' mode='rb' closefd=True>
+ResourceWarning: unclosed file <_io.TextIOWrapper name='/mnt/lustre/projects/vs25/Tin/outputs/real_alphabets_F256_pow2.csv' mode='r' encoding='UTF-8'>
+srun: error: ge01: task 0: Exited with exit code 1

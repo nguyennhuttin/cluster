@@ -1,0 +1,3 @@
+srun: error: gp00: task 0: Out Of Memory
+slurmstepd: error: Detected 1 oom-kill event(s) in step 8075084.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+slurmstepd: error: Detected 1 oom-kill event(s) in step 8075084.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

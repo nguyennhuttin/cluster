@@ -1,0 +1,374 @@
+Requirement already satisfied: pip in ./.venv/lib/python3.7/site-packages (22.0.3)
+Requirement already satisfied: torch in ./.venv/lib/python3.7/site-packages (1.10.1)
+Requirement already satisfied: typing-extensions in ./.venv/lib/python3.7/site-packages (from torch) (4.0.1)
+Requirement already satisfied: torchvision in ./.venv/lib/python3.7/site-packages (0.11.2)
+Requirement already satisfied: torch==1.10.1 in ./.venv/lib/python3.7/site-packages (from torchvision) (1.10.1)
+Requirement already satisfied: numpy in ./.venv/lib/python3.7/site-packages (from torchvision) (1.19.5)
+Requirement already satisfied: pillow!=8.3.0,>=5.3.0 in ./.venv/lib/python3.7/site-packages (from torchvision) (9.0.0)
+Requirement already satisfied: typing-extensions in ./.venv/lib/python3.7/site-packages (from torch==1.10.1->torchvision) (4.0.1)
+Looking in links: https://download.pytorch.org/whl/torch_stable.html
+warning: missing-index-doctype
+
+× The package index page being used does not have a proper HTML doctype declaration.
+╰─> Problematic URL: https://download.pytorch.org/whl/torch_stable.html
+
+note: This is an issue with the page at the URL mentioned above.
+hint: You might need to reach out to the owner of that package index, to get this fixed. See https://github.com/pypa/pip/issues/10825 for context.
+Collecting ont-bonito-cuda111
+  Downloading ont-bonito-cuda111-0.5.0.tar.gz (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.2/48.2 KB 2.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  WARNING: Generating metadata for package ont-bonito-cuda111 produced metadata for project name ont-bonito. Fix your #egg=ont-bonito-cuda111 fragments.
+Discarding https://files.pythonhosted.org/packages/25/1b/673484db9eb7a3885b6267e4e40c45caf4a99dd8cfa7d9a132a7c9bbe3d2/ont-bonito-cuda111-0.5.0.tar.gz#sha256=4efe988193c153dbc286d6df18896dd166e9375b2851ecf001ac61cf3700039a (from https://pypi.org/simple/ont-bonito-cuda111/): Requested ont-bonito from https://files.pythonhosted.org/packages/25/1b/673484db9eb7a3885b6267e4e40c45caf4a99dd8cfa7d9a132a7c9bbe3d2/ont-bonito-cuda111-0.5.0.tar.gz#sha256=4efe988193c153dbc286d6df18896dd166e9375b2851ecf001ac61cf3700039a has inconsistent name: filename has 'ont-bonito-cuda111', but metadata has 'ont-bonito'
+  Downloading ont-bonito-cuda111-0.4.0.tar.gz (43 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 43.6/43.6 KB 2.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting mappy==2.20
+  Downloading mappy-2.20.tar.gz (137 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.7/137.7 KB 3.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: toml==0.10.2 in ./.venv/lib/python3.7/site-packages (from ont-bonito-cuda111) (0.10.2)
+Requirement already satisfied: tqdm==4.31.1 in ./.venv/lib/python3.7/site-packages (from ont-bonito-cuda111) (4.31.1)
+Collecting scipy==1.4.1
+  Downloading scipy-1.4.1-cp37-cp37m-manylinux1_x86_64.whl (26.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.1/26.1 MB 31.0 MB/s eta 0:00:00
+Collecting torch==1.8.0+cu111
+  Downloading https://download.pytorch.org/whl/cu111/torch-1.8.0%2Bcu111-cp37-cp37m-linux_x86_64.whl (1982.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 GB 900.8 kB/s eta 0:00:00
+Collecting numpy~=1.17.5
+  Downloading numpy-1.17.5-cp37-cp37m-manylinux1_x86_64.whl (20.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.0/20.0 MB 42.7 MB/s eta 0:00:00
+Collecting pyspoa==0.0.8
+  Downloading pyspoa-0.0.8-cp37-cp37m-manylinux2010_x86_64.whl (878 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 879.0/879.0 KB 15.8 MB/s eta 0:00:00
+Requirement already satisfied: parasail==1.2 in ./.venv/lib/python3.7/site-packages (from ont-bonito-cuda111) (1.2)
+Collecting ont-seqdist-cuda111==0.0.3
+  Downloading ont_seqdist_cuda111-0.0.3-py3-none-any.whl (21 kB)
+Requirement already satisfied: pandas==1.1.5 in ./.venv/lib/python3.7/site-packages (from ont-bonito-cuda111) (1.1.5)
+Requirement already satisfied: requests==2.25.1 in ./.venv/lib/python3.7/site-packages (from ont-bonito-cuda111) (2.25.1)
+Collecting crf-beam==0.0.1a0
+  Downloading crf_beam-0.0.1a0-cp37-cp37m-manylinux1_x86_64.whl (116 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 116.7/116.7 KB 2.4 MB/s eta 0:00:00
+Requirement already satisfied: ont-fast5-api==3.3.0 in ./.venv/lib/python3.7/site-packages (from ont-bonito-cuda111) (3.3.0)
+Requirement already satisfied: fast-ctc-decode==0.3.0 in ./.venv/lib/python3.7/site-packages (from ont-bonito-cuda111) (0.3.0)
+Collecting cupy-cuda111==8.6.0
+  Downloading cupy_cuda111-8.6.0-cp37-cp37m-manylinux1_x86_64.whl (198.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 198.4/198.4 MB 9.3 MB/s eta 0:00:00
+Collecting genomeworks-cuda-11-1==2021.2.2
+  Downloading genomeworks_cuda_11_1-2021.2.2-cp37-none-any.whl (10.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.9/10.9 MB 53.0 MB/s eta 0:00:00
+Collecting Cython>=0.25.2
+  Using cached Cython-0.29.27-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (1.9 MB)
+Requirement already satisfied: fastrlock>=0.3 in ./.venv/lib/python3.7/site-packages (from cupy-cuda111==8.6.0->ont-bonito-cuda111) (0.8)
+Collecting networkx==2.4
+  Downloading networkx-2.4-py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 28.6 MB/s eta 0:00:00
+Collecting matplotlib==3.3.2
+  Downloading matplotlib-3.3.2-cp37-cp37m-manylinux1_x86_64.whl (11.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.6/11.6 MB 50.2 MB/s eta 0:00:00
+Collecting pytest==4.4.1
+  Downloading pytest-4.4.1-py2.py3-none-any.whl (223 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 223.9/223.9 KB 5.5 MB/s eta 0:00:00
+Collecting setuptools>=41.4.0
+  Using cached setuptools-60.8.1-py3-none-any.whl (1.1 MB)
+Collecting sortedcollections==1.1.2
+  Downloading sortedcollections-1.1.2-py2.py3-none-any.whl (8.4 kB)
+Collecting intervaltree==3.1.0
+  Downloading intervaltree-3.1.0.tar.gz (32 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: progressbar33>=2.3.1 in ./.venv/lib/python3.7/site-packages (from ont-fast5-api==3.3.0->ont-bonito-cuda111) (2.4)
+Requirement already satisfied: packaging in ./.venv/lib/python3.7/site-packages (from ont-fast5-api==3.3.0->ont-bonito-cuda111) (21.3)
+Requirement already satisfied: h5py>=2.8 in ./.venv/lib/python3.7/site-packages (from ont-fast5-api==3.3.0->ont-bonito-cuda111) (3.6.0)
+Requirement already satisfied: pytz>=2017.2 in ./.venv/lib/python3.7/site-packages (from pandas==1.1.5->ont-bonito-cuda111) (2021.3)
+Requirement already satisfied: python-dateutil>=2.7.3 in ./.venv/lib/python3.7/site-packages (from pandas==1.1.5->ont-bonito-cuda111) (2.8.2)
+Requirement already satisfied: wheel in ./.venv/lib/python3.7/site-packages (from parasail==1.2->ont-bonito-cuda111) (0.37.1)
+Collecting pybind11>=2.4
+  Downloading pybind11-2.9.1-py2.py3-none-any.whl (211 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 211.3/211.3 KB 5.2 MB/s eta 0:00:00
+Collecting cmake==3.18.4
+  Downloading cmake-3.18.4-py3-none-manylinux1_x86_64.whl (17.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.7/17.7 MB 51.4 MB/s eta 0:00:00
+Requirement already satisfied: idna<3,>=2.5 in ./.venv/lib/python3.7/site-packages (from requests==2.25.1->ont-bonito-cuda111) (2.10)
+Requirement already satisfied: chardet<5,>=3.0.2 in ./.venv/lib/python3.7/site-packages (from requests==2.25.1->ont-bonito-cuda111) (4.0.0)
+Requirement already satisfied: certifi>=2017.4.17 in ./.venv/lib/python3.7/site-packages (from requests==2.25.1->ont-bonito-cuda111) (2021.10.8)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in ./.venv/lib/python3.7/site-packages (from requests==2.25.1->ont-bonito-cuda111) (1.26.8)
+Requirement already satisfied: typing-extensions in ./.venv/lib/python3.7/site-packages (from torch==1.8.0+cu111->ont-bonito-cuda111) (4.0.1)
+Collecting sortedcontainers<3.0,>=2.0
+  Downloading sortedcontainers-2.4.0-py2.py3-none-any.whl (29 kB)
+Requirement already satisfied: kiwisolver>=1.0.1 in ./.venv/lib/python3.7/site-packages (from matplotlib==3.3.2->genomeworks-cuda-11-1==2021.2.2->ont-bonito-cuda111) (1.3.2)
+Requirement already satisfied: pillow>=6.2.0 in ./.venv/lib/python3.7/site-packages (from matplotlib==3.3.2->genomeworks-cuda-11-1==2021.2.2->ont-bonito-cuda111) (9.0.0)
+Requirement already satisfied: cycler>=0.10 in ./.venv/lib/python3.7/site-packages (from matplotlib==3.3.2->genomeworks-cuda-11-1==2021.2.2->ont-bonito-cuda111) (0.11.0)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3 in ./.venv/lib/python3.7/site-packages (from matplotlib==3.3.2->genomeworks-cuda-11-1==2021.2.2->ont-bonito-cuda111) (3.0.6)
+Collecting decorator>=4.3.0
+  Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting atomicwrites>=1.0
+  Downloading atomicwrites-1.4.0-py2.py3-none-any.whl (6.8 kB)
+Collecting more-itertools>=4.0.0
+  Downloading more_itertools-8.12.0-py3-none-any.whl (54 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.3/54.3 KB 3.2 MB/s eta 0:00:00
+Collecting pluggy>=0.9
+  Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Requirement already satisfied: six>=1.10.0 in ./.venv/lib/python3.7/site-packages (from pytest==4.4.1->genomeworks-cuda-11-1==2021.2.2->ont-bonito-cuda111) (1.16.0)
+Collecting attrs>=17.4.0
+  Downloading attrs-21.4.0-py2.py3-none-any.whl (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.6/60.6 KB 3.6 MB/s eta 0:00:00
+Collecting py>=1.5.0
+  Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 KB 2.8 MB/s eta 0:00:00
+Requirement already satisfied: cached-property in ./.venv/lib/python3.7/site-packages (from h5py>=2.8->ont-fast5-api==3.3.0->ont-bonito-cuda111) (1.5.2)
+Collecting importlib-metadata>=0.12
+  Downloading importlib_metadata-4.10.1-py3-none-any.whl (17 kB)
+Collecting zipp>=0.5
+  Downloading zipp-3.7.0-py3-none-any.whl (5.3 kB)
+Building wheels for collected packages: ont-bonito-cuda111, mappy, intervaltree
+  Building wheel for ont-bonito-cuda111 (setup.py): started
+  Building wheel for ont-bonito-cuda111 (setup.py): still running...
+  Building wheel for ont-bonito-cuda111 (setup.py): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × python setup.py bdist_wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [120 lines of output]
+      Building with CUDA 11.1
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib
+      creating build/lib/bonito
+      copying bonito/aligner.py -> build/lib/bonito
+      copying bonito/fast5.py -> build/lib/bonito
+      copying bonito/multiprocessing.py -> build/lib/bonito
+      copying bonito/util.py -> build/lib/bonito
+      copying bonito/io.py -> build/lib/bonito
+      copying bonito/__init__.py -> build/lib/bonito
+      copying bonito/training.py -> build/lib/bonito
+      copying bonito/nn.py -> build/lib/bonito
+      creating build/lib/bonito/ctc
+      copying bonito/ctc/__init__.py -> build/lib/bonito/ctc
+      copying bonito/ctc/basecall.py -> build/lib/bonito/ctc
+      copying bonito/ctc/model.py -> build/lib/bonito/ctc
+      creating build/lib/bonito/crf
+      copying bonito/crf/__init__.py -> build/lib/bonito/crf
+      copying bonito/crf/basecall.py -> build/lib/bonito/crf
+      copying bonito/crf/model.py -> build/lib/bonito/crf
+      creating build/lib/bonito/cli
+      copying bonito/cli/download.py -> build/lib/bonito/cli
+      copying bonito/cli/view.py -> build/lib/bonito/cli
+      copying bonito/cli/convert.py -> build/lib/bonito/cli
+      copying bonito/cli/duplex.py -> build/lib/bonito/cli
+      copying bonito/cli/__init__.py -> build/lib/bonito/cli
+      copying bonito/cli/train.py -> build/lib/bonito/cli
+      copying bonito/cli/export.py -> build/lib/bonito/cli
+      copying bonito/cli/basecaller.py -> build/lib/bonito/cli
+      copying bonito/cli/evaluate.py -> build/lib/bonito/cli
+      running egg_info
+      writing ont_bonito_cuda111.egg-info/PKG-INFO
+      writing dependency_links to ont_bonito_cuda111.egg-info/dependency_links.txt
+      writing entry points to ont_bonito_cuda111.egg-info/entry_points.txt
+      writing requirements to ont_bonito_cuda111.egg-info/requires.txt
+      writing top-level names to ont_bonito_cuda111.egg-info/top_level.txt
+      reading manifest file 'ont_bonito_cuda111.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      writing manifest file 'ont_bonito_cuda111.egg-info/SOURCES.txt'
+      creating build/lib/bonito/data
+      copying bonito/data/README.md -> build/lib/bonito/data
+      creating build/lib/bonito/models
+      copying bonito/models/README.md -> build/lib/bonito/models
+      creating build/lib/bonito/models/configs
+      copying bonito/models/configs/dna_r9.4.1@v1.toml -> build/lib/bonito/models/configs
+      copying bonito/models/configs/dna_r9.4.1@v2.toml -> build/lib/bonito/models/configs
+      copying bonito/models/configs/dna_r9.4.1@v3.toml -> build/lib/bonito/models/configs
+      installing to build/bdist.linux-x86_64/wheel
+      running install
+      running install_lib
+      creating build/bdist.linux-x86_64
+      creating build/bdist.linux-x86_64/wheel
+      creating build/bdist.linux-x86_64/wheel/bonito
+      creating build/bdist.linux-x86_64/wheel/bonito/ctc
+      copying build/lib/bonito/ctc/__init__.py -> build/bdist.linux-x86_64/wheel/bonito/ctc
+      copying build/lib/bonito/ctc/basecall.py -> build/bdist.linux-x86_64/wheel/bonito/ctc
+      copying build/lib/bonito/ctc/model.py -> build/bdist.linux-x86_64/wheel/bonito/ctc
+      creating build/bdist.linux-x86_64/wheel/bonito/models
+      copying build/lib/bonito/models/README.md -> build/bdist.linux-x86_64/wheel/bonito/models
+      creating build/bdist.linux-x86_64/wheel/bonito/models/configs
+      copying build/lib/bonito/models/configs/dna_r9.4.1@v1.toml -> build/bdist.linux-x86_64/wheel/bonito/models/configs
+      copying build/lib/bonito/models/configs/dna_r9.4.1@v3.toml -> build/bdist.linux-x86_64/wheel/bonito/models/configs
+      copying build/lib/bonito/models/configs/dna_r9.4.1@v2.toml -> build/bdist.linux-x86_64/wheel/bonito/models/configs
+      copying build/lib/bonito/aligner.py -> build/bdist.linux-x86_64/wheel/bonito
+      copying build/lib/bonito/fast5.py -> build/bdist.linux-x86_64/wheel/bonito
+      copying build/lib/bonito/multiprocessing.py -> build/bdist.linux-x86_64/wheel/bonito
+      copying build/lib/bonito/util.py -> build/bdist.linux-x86_64/wheel/bonito
+      copying build/lib/bonito/io.py -> build/bdist.linux-x86_64/wheel/bonito
+      copying build/lib/bonito/__init__.py -> build/bdist.linux-x86_64/wheel/bonito
+      copying build/lib/bonito/training.py -> build/bdist.linux-x86_64/wheel/bonito
+      copying build/lib/bonito/nn.py -> build/bdist.linux-x86_64/wheel/bonito
+      creating build/bdist.linux-x86_64/wheel/bonito/crf
+      copying build/lib/bonito/crf/__init__.py -> build/bdist.linux-x86_64/wheel/bonito/crf
+      copying build/lib/bonito/crf/basecall.py -> build/bdist.linux-x86_64/wheel/bonito/crf
+      copying build/lib/bonito/crf/model.py -> build/bdist.linux-x86_64/wheel/bonito/crf
+      creating build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/download.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/view.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/convert.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/duplex.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/__init__.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/train.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/export.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/basecaller.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      copying build/lib/bonito/cli/evaluate.py -> build/bdist.linux-x86_64/wheel/bonito/cli
+      creating build/bdist.linux-x86_64/wheel/bonito/data
+      copying build/lib/bonito/data/README.md -> build/bdist.linux-x86_64/wheel/bonito/data
+      running install_egg_info
+      Copying ont_bonito_cuda111.egg-info to build/bdist.linux-x86_64/wheel/ont_bonito_cuda111-0.4.0-py3.7.egg-info
+      running install_scripts
+      usage: bonito [-h] [-v]
+                    {basecaller,train,evaluate,view,convert,download,export} ...
+      bonito: error: unrecognized arguments: --latest
+      Traceback (most recent call last):
+        File "<string>", line 36, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-3ld9tniy/ont-bonito-cuda111_c7374ff8e5b6413c922f3c780b370be0/setup.py", line 60, in <module>
+          'https://download.pytorch.org/whl/torch_stable.html',
+        File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/setuptools/__init__.py", line 145, in setup
+          return distutils.core.setup(**attrs)
+        File "/usr/local/python/3.7.3-system/lib/python3.7/distutils/core.py", line 148, in setup
+          dist.run_commands()
+        File "/usr/local/python/3.7.3-system/lib/python3.7/distutils/dist.py", line 966, in run_commands
+          self.run_command(cmd)
+        File "/usr/local/python/3.7.3-system/lib/python3.7/distutils/dist.py", line 985, in run_command
+          cmd_obj.run()
+        File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/wheel/bdist_wheel.py", line 335, in run
+          self.run_command('install')
+        File "/usr/local/python/3.7.3-system/lib/python3.7/distutils/cmd.py", line 313, in run_command
+          self.distribution.run_command(command)
+        File "/usr/local/python/3.7.3-system/lib/python3.7/distutils/dist.py", line 985, in run_command
+          cmd_obj.run()
+        File "/tmp/pip-install-3ld9tniy/ont-bonito-cuda111_c7374ff8e5b6413c922f3c780b370be0/setup.py", line 38, in run
+          check_call("bonito download --models --latest -f".split())
+        File "/usr/local/python/3.7.3-system/lib/python3.7/subprocess.py", line 347, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['bonito', 'download', '--models', '--latest', '-f']' returned non-zero exit status 2.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for ont-bonito-cuda111
+  Running setup.py clean for ont-bonito-cuda111
+  Building wheel for mappy (setup.py): started
+  Building wheel for mappy (setup.py): finished with status 'done'
+  Created wheel for mappy: filename=mappy-2.20-cp37-cp37m-linux_x86_64.whl size=559042 sha256=4b8932d62481110d8b1e29d403857c6104a72f0a73f6352ab1fcb2bab1661f06
+  Stored in directory: /home/nngu0068/.cache/pip/wheels/75/88/c5/018708bf95e83e97059f775b7484a0d386b3c27567f1de60d3
+  Building wheel for intervaltree (setup.py): started
+  Building wheel for intervaltree (setup.py): finished with status 'done'
+  Created wheel for intervaltree: filename=intervaltree-3.1.0-py2.py3-none-any.whl size=26103 sha256=94e12a268f0f5eec76a3002e968d04105343310a45cb54ebc50ac0017eeeb982
+  Stored in directory: /home/nngu0068/.cache/pip/wheels/16/85/bd/1001cbb46dcfb71c2001cd7401c6fb250392f22a81ce3722f7
+Successfully built mappy intervaltree
+Failed to build ont-bonito-cuda111
+Installing collected packages: sortedcontainers, mappy, cmake, zipp, sortedcollections, setuptools, pybind11, py, numpy, more-itertools, intervaltree, decorator, Cython, attrs, atomicwrites, torch, scipy, pyspoa, networkx, matplotlib, importlib-metadata, cupy-cuda111, crf-beam, pluggy, ont-seqdist-cuda111, pytest, genomeworks-cuda-11-1, ont-bonito-cuda111
+  Attempting uninstall: mappy
+    Found existing installation: mappy 2.23
+    Uninstalling mappy-2.23:
+      Successfully uninstalled mappy-2.23
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 40.8.0
+    Uninstalling setuptools-40.8.0:
+      Successfully uninstalled setuptools-40.8.0
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.19.5
+    Uninstalling numpy-1.19.5:
+      Successfully uninstalled numpy-1.19.5
+  Attempting uninstall: torch
+    Found existing installation: torch 1.10.1
+    Uninstalling torch-1.10.1:
+      Successfully uninstalled torch-1.10.1
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.5.4
+    Uninstalling scipy-1.5.4:
+      Successfully uninstalled scipy-1.5.4
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.5.1
+    Uninstalling matplotlib-3.5.1:
+      Successfully uninstalled matplotlib-3.5.1
+  Running setup.py install for ont-bonito-cuda111: started
+  Running setup.py install for ont-bonito-cuda111: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Running setup.py install for ont-bonito-cuda111 did not run successfully.
+  │ exit code: 1
+  ╰─> [42 lines of output]
+      Building with CUDA 11.1
+      running install
+      /monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+        setuptools.SetuptoolsDeprecationWarning,
+      running build
+      running build_py
+      running egg_info
+      writing ont_bonito_cuda111.egg-info/PKG-INFO
+      writing dependency_links to ont_bonito_cuda111.egg-info/dependency_links.txt
+      writing entry points to ont_bonito_cuda111.egg-info/entry_points.txt
+      writing requirements to ont_bonito_cuda111.egg-info/requires.txt
+      writing top-level names to ont_bonito_cuda111.egg-info/top_level.txt
+      reading manifest file 'ont_bonito_cuda111.egg-info/SOURCES.txt'
+      reading manifest template 'MANIFEST.in'
+      adding license file 'LICENCE.txt'
+      running install_lib
+      running install_egg_info
+      running install_scripts
+      Installing bonito script to /monfs00/projects/vs25/Tin/.venv/bin
+      usage: bonito [-h] [-v]
+                    {basecaller,train,evaluate,view,convert,download,export} ...
+      bonito: error: unrecognized arguments: --latest
+      Traceback (most recent call last):
+        File "<string>", line 36, in <module>
+        File "<pip-setuptools-caller>", line 34, in <module>
+        File "/tmp/pip-install-3ld9tniy/ont-bonito-cuda111_c7374ff8e5b6413c922f3c780b370be0/setup.py", line 60, in <module>
+          'https://download.pytorch.org/whl/torch_stable.html',
+        File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/setuptools/__init__.py", line 155, in setup
+          return distutils.core.setup(**attrs)
+        File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/setuptools/_distutils/core.py", line 148, in setup
+          return run_commands(dist)
+        File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/setuptools/_distutils/core.py", line 163, in run_commands
+          dist.run_commands()
+        File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/setuptools/_distutils/dist.py", line 967, in run_commands
+          self.run_command(cmd)
+        File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/setuptools/_distutils/dist.py", line 986, in run_command
+          cmd_obj.run()
+        File "/tmp/pip-install-3ld9tniy/ont-bonito-cuda111_c7374ff8e5b6413c922f3c780b370be0/setup.py", line 38, in run
+          check_call("bonito download --models --latest -f".split())
+        File "/usr/local/python/3.7.3-system/lib/python3.7/subprocess.py", line 347, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['bonito', 'download', '--models', '--latest', '-f']' returned non-zero exit status 2.
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: legacy-install-failure
+
+× Encountered error while trying to install package.
+╰─> ont-bonito-cuda111
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for output from the failure.
+[downloading models]
+[skipping dna_r10.4_e8.1_sup@v3.4.zip]
+[skipping dna_r10.4_e8.1_hac@v3.4.zip]
+[skipping dna_r10.4_e8.1_fast@v3.4.zip]
+[skipping dna_r9.4.1_e8.1_sup@v3.3.zip]
+[skipping dna_r9.4.1_e8.1_hac@v3.3.zip]
+[skipping dna_r9.4.1_e8.1_fast@v3.4.zip]
+[skipping dna_r9.4.1_e8_sup@v3.3.zip]
+[skipping dna_r9.4.1_e8_hac@v3.3.zip]
+[skipping dna_r9.4.1_e8_fast@v3.4.zip]
+[available models]
+ - dna_r10.4_e8.1_sup@v3.4
+ - dna_r10.4_e8.1_hac@v3.4
+ - dna_r10.4_e8.1_fast@v3.4
+ - dna_r9.4.1_e8.1_sup@v3.3
+ - dna_r9.4.1_e8.1_hac@v3.3
+ - dna_r9.4.1_e8.1_fast@v3.4
+ - dna_r9.4.1_e8_sup@v3.3
+ - dna_r9.4.1_e8_hac@v3.3
+ - dna_r9.4.1_e8_fast@v3.4

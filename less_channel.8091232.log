@@ -1,0 +1,67 @@
+less_channel
+Models outputs /mnt/lustre/projects/vs25/Tin
+0.001
+100
+16
+start_from_checkpoint: True
+skip_training False
+outputs/real_alphabets_F256_pow2.csv
+Estimated number of samples: 12800
+Estimated input data size: 5.12 MB
+Estimated label size: 5.12 MB
+Estimated Total Dataset size: 10.24 MB
+s l rs rl
+s: /mnt/lustre/projects/vs25/Tin/data/data224_signals.pt 
+l: /mnt/lustre/projects/vs25/Tin/data/data224_labels.pt 
+rs /mnt/lustre/projects/vs25/Tin/data/data224_0_real_signals.pt 
+rl: /mnt/lustre/projects/vs25/Tin/data/data224_0_real_labels.pt
+loading from: /mnt/lustre/projects/vs25/Tin/data/data224_signals.pt /mnt/lustre/projects/vs25/Tin/data/data224_labels.pt
+Input data shape: torch.Size([685700, 316]) torch.Size([316])
+Label data shape: torch.Size([685700, 316]) torch.Size([316])
+loading from: /mnt/lustre/projects/vs25/Tin/data/data224_0_real_signals.pt /mnt/lustre/projects/vs25/Tin/data/data224_0_real_labels.pt
+Train Input data shape: torch.Size([16, 1, 316])
+Train Labels shape: torch.Size([16, 316])
+Test Input data shape: torch.Size([16, 1, 316])
+Test Labels shape: torch.Size([16, 316])
+checking model data, label, output shape
+torch.Size([16, 1, 316])
+torch.Size([16, 316])
+torch.Size([16, 3, 316])
+582845
+36428
+/mnt/lustre/projects/vs25/Tin/Models/less_channel.pt
+save path exists: False
+Checkpoint Does not exist for /mnt/lustre/projects/vs25/Tin/Models/less_channel.pt
+device cuda:0
+########### start training #################
+Saving Model
+| Epoch: 01 | Train Acc: 00.00% | Val. Acc: 98.18% |
+train time: 3527.954383611679 train_acc: 7.152557373046875e-07 valid_acc: 213.49782800674438
+Saving Model
+| Epoch: 02 | Train Acc: 00.00% | Val. Acc: 98.50% |
+train time: 3527.2111003398895 train_acc: 2.6226043701171875e-06 valid_acc: 214.48684859275818
+Saving Model
+| Epoch: 03 | Train Acc: 00.00% | Val. Acc: 98.68% |
+train time: 3530.4904210567474 train_acc: 9.5367431640625e-07 valid_acc: 214.4371292591095
+Saving Model
+| Epoch: 04 | Train Acc: 00.00% | Val. Acc: 98.75% |
+train time: 3530.8548953533173 train_acc: 7.152557373046875e-07 valid_acc: 214.51545000076294
+Saving Model
+| Epoch: 05 | Train Acc: 00.00% | Val. Acc: 98.78% |
+train time: 3528.5372471809387 train_acc: 2.6226043701171875e-06 valid_acc: 214.2369785308838
+Saving Model
+| Epoch: 06 | Train Acc: 00.00% | Val. Acc: 98.79% |
+train time: 3526.109828710556 train_acc: 2.6226043701171875e-06 valid_acc: 214.09902167320251
+Saving Model
+| Epoch: 07 | Train Acc: 00.00% | Val. Acc: 98.87% |
+train time: 3528.8969662189484 train_acc: 2.1457672119140625e-06 valid_acc: 213.99994564056396
+Saving Model
+| Epoch: 08 | Train Acc: 00.00% | Val. Acc: 98.90% |
+train time: 3532.292418718338 train_acc: 2.86102294921875e-06 valid_acc: 217.22740173339844
+| Epoch: 09 | Train Acc: 00.00% | Val. Acc: 98.87% |
+train time: 3530.5672159194946 train_acc: 7.152557373046875e-07 valid_acc: 214.34146070480347
+| Epoch: 10 | Train Acc: 00.00% | Val. Acc: 98.61% |
+train time: 3532.5379078388214 train_acc: 2.1457672119140625e-06 valid_acc: 217.4473009109497
+Saving Model
+| Epoch: 11 | Train Acc: 00.00% | Val. Acc: 98.94% |
+train time: 3530.3767743110657 train_acc: 1.9073486328125e-06 valid_acc: 217.8427243232727

@@ -1,0 +1,6 @@
+data/
+Models/
+SRP-Test-Data/
+Models2/
+.venv/
+outputs/real_alphabets_F256_pow2.csv

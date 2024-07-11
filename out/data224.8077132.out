@@ -1,0 +1,8 @@
+usage: detect_224.py [-h] [--model_name MODEL_NAME] [--folder_dir FOLDER_DIR]
+                     [--save_dir SAVE_DIR] [--save_dir_data SAVE_DIR_DATA]
+                     [--learning_rate LEARNING_RATE] [--num_epochs NUM_EPOCHS]
+                     [--batch_size BATCH_SIZE] [--new] [--skip_training]
+                     [--num_gpus NUM_GPUS] [--cpu_mode] [--gen_data]
+                     [--gen_data_real]
+detect_224.py: error: unrecognized arguments: --data_gen_real
+srun: error: gp07: task 0: Exited with exit code 2

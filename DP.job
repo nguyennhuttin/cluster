@@ -1,0 +1,40 @@
+#!/bin/bash
+#SBATCH --job-name=dis
+#SBATCH --partition=gpu
+#SBATCH --time=4:00:00
+
+### e.g. request 4 nodes with 1 gpu each, totally 4 gpus (WORLD_SIZE==4)
+### Note: --gres=gpu:x should equal to ntasks-per-node
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --gres=gpu:2
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=7000
+#SBATCH --output=DPP.out
+
+### change 5-digit MASTER_PORT as you wish, slurm will raise Error if duplicated with others
+### change WORLD_SIZE as gpus/node * num_nodes
+export MASTER_PORT=12340
+export WORLD_SIZE=2
+
+### get the first node name as master address - customized for vgg slurm
+### e.g. master(gnodee[2-5],gnoded1) == gnodee2
+echo "NODELIST="${SLURM_NODELIST}
+master_addr=$(scontrol show hostnames "$SLURM_JOB_NODELIST" | head -n 1)
+export MASTER_ADDR=$master_addr
+echo "MASTER_ADDR="$MASTER_ADDR
+
+### init virtual environment if needed
+module load pytorch
+#python3 -m venv .venv
+source .venv/bin/activate
+#pip install --upgrade pip
+#pip install torch
+#pip install torchvision
+#pip install tqdm
+#pip install matplotlib
+#pip install sklearn
+#pip install pandas
+
+### the command to run
+srun python3 DP.py --model_name parallel --num_epochs 1 --num_gpus 2

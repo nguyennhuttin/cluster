@@ -1,0 +1,13 @@
+NODELIST=ge01
+MASTER_ADDR=ge01
+Traceback (most recent call last):
+  File "DP.py", line 540, in <module>
+    test_signals = torch.load(save_path_real_signals)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/serialization.py", line 594, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/monfs00/projects/vs25/Tin/.venv/lib/python3.7/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/lustre/projects/vs25/Tin/data/data224real_signal.pt'
+srun: error: ge01: task 0: Exited with exit code 1

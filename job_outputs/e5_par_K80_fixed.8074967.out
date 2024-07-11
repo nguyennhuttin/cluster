@@ -1,0 +1,3 @@
+slurmstepd: error: *** JOB 8074967 ON ge01 CANCELLED AT 2022-01-17T18:29:19 ***
+slurmstepd: error: *** STEP 8074967.0 ON ge01 CANCELLED AT 2022-01-17T18:29:19 ***
+srun: Job step aborted: Waiting up to 22 seconds for job step to finish.

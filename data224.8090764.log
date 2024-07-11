@@ -1,0 +1,138 @@
+small_data224
+Models outputs /mnt/lustre/projects/vs25/Tin
+0.001
+100
+16
+start_from_checkpoint: True
+skip_training False
+outputs/real_alphabets_F256_pow2.csv
+Estimated number of samples: 12800
+Estimated input data size: 5.12 MB
+Estimated label size: 5.12 MB
+Estimated Total Dataset size: 10.24 MB
+s l rs rl
+s: /mnt/lustre/projects/vs25/Tin/data/data224_signals.pt 
+l: /mnt/lustre/projects/vs25/Tin/data/data224_labels.pt 
+rs /mnt/lustre/projects/vs25/Tin/data/data224_0_real_signals.pt 
+rl: /mnt/lustre/projects/vs25/Tin/data/data224_0_real_labels.pt
+loading from: /mnt/lustre/projects/vs25/Tin/data/data224_signals.pt /mnt/lustre/projects/vs25/Tin/data/data224_labels.pt
+Input data shape: torch.Size([685700, 316]) torch.Size([316])
+Label data shape: (685700, 200) (200,)
+loading from: /mnt/lustre/projects/vs25/Tin/data/data224_0_real_signals.pt /mnt/lustre/projects/vs25/Tin/data/data224_0_real_labels.pt
+Train Input data shape: torch.Size([16, 1, 316])
+Train Labels shape: torch.Size([16, 200])
+checking model data, label, output shape
+torch.Size([16, 1, 316])
+torch.Size([16, 200])
+torch.Size([16, 3, 200])
+582845
+36428
+/mnt/lustre/projects/vs25/Tin/Models/small_data224.pt
+save path exists: False
+Checkpoint Does not exist for /mnt/lustre/projects/vs25/Tin/Models/small_data224.pt
+device cuda:0
+########### start training #################
+Saving Model
+| Epoch: 01 | Train Acc: 00.00% | Val. Acc: 70.67% |
+train time: 1179.0997228622437 train_acc: 1.430511474609375e-06 valid_acc: 68.15852975845337
+Saving Model
+| Epoch: 02 | Train Acc: 00.00% | Val. Acc: 80.17% |
+train time: 1168.755199432373 train_acc: 1.1920928955078125e-06 valid_acc: 69.60546922683716
+Saving Model
+| Epoch: 03 | Train Acc: 00.00% | Val. Acc: 81.93% |
+train time: 1187.8091115951538 train_acc: 1.430511474609375e-06 valid_acc: 69.51291584968567
+Saving Model
+| Epoch: 04 | Train Acc: 00.00% | Val. Acc: 82.59% |
+train time: 1173.1175804138184 train_acc: 1.430511474609375e-06 valid_acc: 69.2217390537262
+Saving Model
+| Epoch: 05 | Train Acc: 00.00% | Val. Acc: 82.66% |
+train time: 1182.42036318779 train_acc: 9.5367431640625e-07 valid_acc: 69.327397108078
+Saving Model
+| Epoch: 06 | Train Acc: 00.00% | Val. Acc: 82.72% |
+train time: 1182.7405149936676 train_acc: 1.1920928955078125e-06 valid_acc: 69.07607316970825
+Saving Model
+| Epoch: 07 | Train Acc: 00.00% | Val. Acc: 83.03% |
+train time: 1149.6316587924957 train_acc: 7.152557373046875e-07 valid_acc: 67.33666682243347
+| Epoch: 08 | Train Acc: 00.00% | Val. Acc: 82.68% |
+train time: 1132.974660396576 train_acc: 1.430511474609375e-06 valid_acc: 67.37044644355774
+Saving Model
+| Epoch: 09 | Train Acc: 00.00% | Val. Acc: 83.21% |
+train time: 1134.996689081192 train_acc: 1.430511474609375e-06 valid_acc: 67.40708208084106
+| Epoch: 10 | Train Acc: 00.00% | Val. Acc: 83.18% |
+train time: 1133.3303406238556 train_acc: 9.5367431640625e-07 valid_acc: 67.34917426109314
+Saving Model
+| Epoch: 11 | Train Acc: 00.00% | Val. Acc: 83.23% |
+train time: 1132.2916901111603 train_acc: 7.152557373046875e-07 valid_acc: 67.19968962669373
+Saving Model
+| Epoch: 12 | Train Acc: 00.00% | Val. Acc: 83.43% |
+train time: 1132.7230517864227 train_acc: 9.5367431640625e-07 valid_acc: 67.03114056587219
+Saving Model
+| Epoch: 13 | Train Acc: 00.00% | Val. Acc: 83.44% |
+train time: 1134.8194150924683 train_acc: 9.5367431640625e-07 valid_acc: 67.05622863769531
+| Epoch: 14 | Train Acc: 00.00% | Val. Acc: 83.31% |
+train time: 1133.6944961547852 train_acc: 9.5367431640625e-07 valid_acc: 67.11145496368408
+| Epoch: 15 | Train Acc: 00.00% | Val. Acc: 83.26% |
+train time: 1136.0371987819672 train_acc: 1.430511474609375e-06 valid_acc: 67.7319164276123
+| Epoch: 16 | Train Acc: 00.00% | Val. Acc: 83.40% |
+train time: 1110.93159365654 train_acc: 1.1920928955078125e-06 valid_acc: 65.48575067520142
+| Epoch: 17 | Train Acc: 00.00% | Val. Acc: 83.40% |
+train time: 1103.4441406726837 train_acc: 7.152557373046875e-07 valid_acc: 65.48422503471375
+| Epoch: 18 | Train Acc: 00.00% | Val. Acc: 83.34% |
+train time: 1101.8009884357452 train_acc: 9.5367431640625e-07 valid_acc: 65.31170701980591
+| Epoch: 19 | Train Acc: 00.00% | Val. Acc: 83.32% |
+train time: 1101.2847664356232 train_acc: 9.5367431640625e-07 valid_acc: 65.48370480537415
+| Epoch: 20 | Train Acc: 00.00% | Val. Acc: 83.44% |
+train time: 1100.7425515651703 train_acc: 1.9073486328125e-06 valid_acc: 65.32125663757324
+Saving Model
+| Epoch: 21 | Train Acc: 00.00% | Val. Acc: 83.51% |
+train time: 1103.2509911060333 train_acc: 7.152557373046875e-07 valid_acc: 65.51797819137573
+Saving Model
+| Epoch: 22 | Train Acc: 00.00% | Val. Acc: 83.61% |
+train time: 1100.7392270565033 train_acc: 7.152557373046875e-07 valid_acc: 65.38566017150879
+| Epoch: 23 | Train Acc: 00.00% | Val. Acc: 83.48% |
+train time: 1100.673999786377 train_acc: 1.1920928955078125e-06 valid_acc: 65.46590685844421
+| Epoch: 24 | Train Acc: 00.00% | Val. Acc: 83.51% |
+train time: 1101.5932965278625 train_acc: 9.5367431640625e-07 valid_acc: 65.36608576774597
+| Epoch: 25 | Train Acc: 00.00% | Val. Acc: 83.36% |
+train time: 1101.6028583049774 train_acc: 9.5367431640625e-07 valid_acc: 65.51001787185669
+| Epoch: 26 | Train Acc: 00.00% | Val. Acc: 83.41% |
+train time: 1101.3611199855804 train_acc: 9.5367431640625e-07 valid_acc: 65.49892544746399
+| Epoch: 27 | Train Acc: 00.00% | Val. Acc: 83.54% |
+train time: 1102.1057496070862 train_acc: 1.430511474609375e-06 valid_acc: 65.4112012386322
+| Epoch: 28 | Train Acc: 00.00% | Val. Acc: 83.49% |
+train time: 1101.1739268302917 train_acc: 9.5367431640625e-07 valid_acc: 65.50675296783447
+| Epoch: 29 | Train Acc: 00.00% | Val. Acc: 83.48% |
+train time: 1102.2149271965027 train_acc: 1.1920928955078125e-06 valid_acc: 65.61084794998169
+| Epoch: 30 | Train Acc: 00.00% | Val. Acc: 83.43% |
+train time: 1103.5887877941132 train_acc: 9.5367431640625e-07 valid_acc: 65.39512968063354
+| Epoch: 31 | Train Acc: 00.00% | Val. Acc: 83.59% |
+train time: 1103.3419437408447 train_acc: 9.5367431640625e-07 valid_acc: 65.60309386253357
+| Epoch: 32 | Train Acc: 00.00% | Val. Acc: 83.44% |
+train time: 1104.5959074497223 train_acc: 9.5367431640625e-07 valid_acc: 65.63557839393616
+| Epoch: 33 | Train Acc: 00.00% | Val. Acc: 83.49% |
+train time: 1104.7934205532074 train_acc: 1.1920928955078125e-06 valid_acc: 65.38686180114746
+| Epoch: 34 | Train Acc: 00.00% | Val. Acc: 83.56% |
+train time: 1101.329262971878 train_acc: 7.152557373046875e-07 valid_acc: 65.45111155509949
+| Epoch: 35 | Train Acc: 00.00% | Val. Acc: 83.57% |
+train time: 1103.0217175483704 train_acc: 9.5367431640625e-07 valid_acc: 65.49199891090393
+| Epoch: 36 | Train Acc: 00.00% | Val. Acc: 83.46% |
+train time: 1102.4327800273895 train_acc: 2.384185791015625e-06 valid_acc: 65.33831214904785
+| Epoch: 37 | Train Acc: 00.00% | Val. Acc: 83.55% |
+train time: 1101.6014339923859 train_acc: 7.152557373046875e-07 valid_acc: 65.23776388168335
+| Epoch: 38 | Train Acc: 00.00% | Val. Acc: 83.28% |
+train time: 1100.4325733184814 train_acc: 9.5367431640625e-07 valid_acc: 65.20826959609985
+Saving Model
+| Epoch: 39 | Train Acc: 00.00% | Val. Acc: 83.63% |
+train time: 1101.4782662391663 train_acc: 7.152557373046875e-07 valid_acc: 65.12453770637512
+| Epoch: 40 | Train Acc: 00.00% | Val. Acc: 83.55% |
+train time: 1102.012128829956 train_acc: 9.5367431640625e-07 valid_acc: 65.56961941719055
+| Epoch: 41 | Train Acc: 00.00% | Val. Acc: 78.37% |
+train time: 1103.9425060749054 train_acc: 9.5367431640625e-07 valid_acc: 65.47913980484009
+| Epoch: 42 | Train Acc: 00.00% | Val. Acc: 83.47% |
+train time: 1103.41747713089 train_acc: 9.5367431640625e-07 valid_acc: 65.51565361022949
+| Epoch: 43 | Train Acc: 00.00% | Val. Acc: 83.62% |
+train time: 1105.2889318466187 train_acc: 9.5367431640625e-07 valid_acc: 65.50849652290344
+| Epoch: 44 | Train Acc: 00.00% | Val. Acc: 83.35% |
+train time: 1101.9377224445343 train_acc: 1.1920928955078125e-06 valid_acc: 65.40597295761108
+| Epoch: 45 | Train Acc: 00.00% | Val. Acc: 83.51% |
+train time: 1103.267620563507 train_acc: 1.1920928955078125e-06 valid_acc: 65.46566772460938

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "detect_224.py", line 107, in <module>
+    cpu_mode == args.cpu_mode
+NameError: name 'cpu_mode' is not defined
+srun: error: gp07: task 0: Exited with exit code 1
